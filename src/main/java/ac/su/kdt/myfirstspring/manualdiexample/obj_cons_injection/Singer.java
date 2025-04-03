@@ -1,5 +1,8 @@
-package ac.su.kdt.myfirstspring.obj_field_injection;
+package ac.su.kdt.myfirstspring.manualdiexample.obj_cons_injection;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Singer {
     public Singer() {
         // 생성자에서 직접 의존성을 해소! (주입받는 것이 아님)

@@ -1,8 +1,8 @@
-package ac.su.kdt.myfirstspring.main;
+package ac.su.kdt.myfirstspring.manualdiexample.main;
 
-import ac.su.kdt.myfirstspring.obj_cons_injection.Broadcast;
-import ac.su.kdt.myfirstspring.obj_cons_injection.Singer;
-import ac.su.kdt.myfirstspring.obj_cons_injection.Stage;
+import ac.su.kdt.myfirstspring.manualdiexample.obj_cons_injection.Broadcast;
+import ac.su.kdt.myfirstspring.manualdiexample.obj_cons_injection.Singer;
+import ac.su.kdt.myfirstspring.manualdiexample.obj_cons_injection.Stage;
 
 public class ConstructorInjectionMain {
     public static void main(String[] args) {

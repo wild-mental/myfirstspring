@@ -1,4 +1,4 @@
-package ac.su.kdt.myfirstspring.obj_setter_injection;
+package ac.su.kdt.myfirstspring.manualdiexample.obj_self_depend_clear;
 
 public class Singer {
     public Singer() {

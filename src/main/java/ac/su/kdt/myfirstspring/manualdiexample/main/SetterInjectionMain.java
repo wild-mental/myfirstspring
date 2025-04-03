@@ -1,8 +1,8 @@
-package ac.su.kdt.myfirstspring.main;
+package ac.su.kdt.myfirstspring.manualdiexample.main;
 
-import ac.su.kdt.myfirstspring.obj_setter_injection.Broadcast;
-import ac.su.kdt.myfirstspring.obj_setter_injection.Singer;
-import ac.su.kdt.myfirstspring.obj_setter_injection.Stage;
+import ac.su.kdt.myfirstspring.manualdiexample.obj_setter_injection.Broadcast;
+import ac.su.kdt.myfirstspring.manualdiexample.obj_setter_injection.Singer;
+import ac.su.kdt.myfirstspring.manualdiexample.obj_setter_injection.Stage;
 
 public class SetterInjectionMain {
     public static void main(String[] args) {

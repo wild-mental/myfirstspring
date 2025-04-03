@@ -1,11 +1,16 @@
-package ac.su.kdt.myfirstspring.obj_field_injection;
+package ac.su.kdt.myfirstspring.manualdiexample.obj_setter_injection;
 
 public class Broadcast {
-    public Stage stage;
+    private Stage stage;
 
     // 방송국 객체가 생성될 때, 무대도 함께 생성
     public Broadcast() {
         System.out.println("방송국 생성");
+    }
+
+    // 무대 객체를 주입받는 setter 메서드
+    public void setStage(Stage stage) {
+        this.stage = stage;
     }
 
     // static 메서드

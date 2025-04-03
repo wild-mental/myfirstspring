@@ -1,6 +1,6 @@
-package ac.su.kdt.myfirstspring.main;
+package ac.su.kdt.myfirstspring.manualdiexample.main;
 
-import ac.su.kdt.myfirstspring.obj_self_depend_clear.Broadcast;
+import ac.su.kdt.myfirstspring.manualdiexample.obj_self_depend_clear.Broadcast;
 
 // 각 객체에서 직접 의존성을 제어하도록 개발된 시나리오를 호출합니다.
 // 여기에서는 IoC가 아니라 개발자의 직접 제어로 의존성을 주입합니다.

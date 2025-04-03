@@ -1,4 +1,4 @@
-package ac.su.kdt.myfirstspring.obj_self_depend_clear;
+package ac.su.kdt.myfirstspring.manualdiexample.obj_self_depend_clear;
 
 public class Stage {
     // 공연자가 미리 준비되어 있어야 함

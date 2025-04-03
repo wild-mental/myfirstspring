@@ -1,4 +1,4 @@
-package ac.su.kdt.myfirstspring.obj_cons_injection;
+package ac.su.kdt.myfirstspring.manualdiexample.obj_field_injection;
 
 public class Singer {
     public Singer() {

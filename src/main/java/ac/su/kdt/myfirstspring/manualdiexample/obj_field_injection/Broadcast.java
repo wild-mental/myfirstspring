@@ -1,17 +1,17 @@
-package ac.su.kdt.myfirstspring.obj_cons_injection;
+package ac.su.kdt.myfirstspring.manualdiexample.obj_field_injection;
 
 public class Broadcast {
-    private Stage stage;
+    public Stage stage;
 
     // 방송국 객체가 생성될 때, 무대도 함께 생성
-    public Broadcast(Stage stage) {
-        this.stage = stage;
+    public Broadcast() {
         System.out.println("방송국 생성");
     }
 
-    // 프레임워크 등에서 자동으로 주입해줄 수 있는 코드를 본 메서드로 대체함
-    public static Broadcast getBroadcastingStation(Stage stage) {
-        return new Broadcast(stage);
+    // static 메서드
+    public static void broadcastSelfDI() {
+        Broadcast broadcastingStation = new Broadcast();
+        broadcastingStation.startBroadcasting();
     }
 
     public void startBroadcasting() {

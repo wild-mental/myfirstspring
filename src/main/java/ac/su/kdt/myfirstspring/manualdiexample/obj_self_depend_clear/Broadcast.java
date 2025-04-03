@@ -1,4 +1,4 @@
-package ac.su.kdt.myfirstspring.obj_self_depend_clear;
+package ac.su.kdt.myfirstspring.manualdiexample.obj_self_depend_clear;
 
 public class Broadcast {
     private final Stage stage;
