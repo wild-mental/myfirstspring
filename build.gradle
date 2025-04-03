@@ -1,0 +1,41 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.4.4'
+	id 'io.spring.dependency-management' version '1.1.7'
+}
+
+group = 'ac.su.kdt'
+version = '0.0.1-SNAPSHOT'
+
+java {
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(17)
+	}
+}
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	// 버전을 명시하고자 한다면 의존 관계에 있는 라이브러리의 버전도 모두 함께 명시하기!
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	compileOnly 'org.projectlombok:lombok'
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	annotationProcessor 'org.projectlombok:lombok'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+	// https://mvnrepository.com/artifact/io.lettuce/lettuce-core
+	implementation("io.lettuce:lettuce-core")
+	// 최종 Product 로서 배포하기 전에는 테스트를 완벽하게 통과한 시점을 기준으로 라이브러리 버전 고정
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
